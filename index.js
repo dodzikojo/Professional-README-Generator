@@ -17,14 +17,12 @@ function getLicenseNames(licenses) {
     for (const license of licenses) {
         licenseNames.push(license[0])
     }
-
     return licenseNames
 }
 
 
-
 // array of questions for user
-const questions = () => inquirer.prompt(
+const questions = [
     {
         type: 'input',
         name: 'title',
@@ -49,12 +47,15 @@ const questions = () => inquirer.prompt(
         type: 'list',
         name: 'license',
         message: "Add a license to the project from the list:",
-        choices: getLicenseNames(allLicenses)
+        choices: getLicenseNames(allLicenses),
+        filter(val) {
+            return val.toLowerCase();
+        },
     },
     {
         type: 'input',
         name: 'contribute',
-        message: "Add information on user contributions:",
+        message: "Add information on how others can contribute:",
     },
     {
         type: 'input',
@@ -63,15 +64,15 @@ const questions = () => inquirer.prompt(
     },
     {
         type: 'input',
-        name: 'questions',
-        message: "Add email for questions and support:",
+        name: 'email',
+        message: "Add email to be contacted for questions and support:",
     },
     {
         type: 'input',
         name: 'githubId',
-        message: "Add authors GitHub Id:",
+        message: "Add authors GitHub username:",
     },
-);
+];
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -82,7 +83,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile("fileName.md", generateMarkdown(answers))
+    });
 }
 
 // function call to initialize program
