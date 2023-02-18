@@ -10,44 +10,43 @@ function generateMarkdown(data) {
   const {title,description, installation, usage,license, contribute, test, email, githubId} = data;
 
   let mdString =  
-  `# ${title}
-  
-  ${getLicenseBadge(license)}
-  
-  ## Description
-  ${description}
-  
-  ## Table of Contents
-  - [The title of my project](#the-title-of-my-project)
-  - [Sections entitled:](#sections-entitled)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
-  - [Installation Instructions](#installation-instructions)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation Instructions
-  ${installation}
-  
-  ## Usage
-  ${usage}
-  
-  ## License
-  ${getLicenseName(license)}
+  `
+# ${title}
 
-  ${getLicenseText(license)}
-  
-  ## Contributing
-  ${contribute}
-  
-  ## Tests
-  ${test}
-  
-  ## Questions
-  If you have any questions, you can reach out to me here at https://github.com/${githubId} or via email at ${email}  
+${getLicenseBadge(license)}
+
+## Description
+${description}
+
+## Table of Contents
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Installation Instructions](#installation-instructions)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation Instructions
+${installation}
+
+## Usage
+${usage}
+
+## License
+${getLicenseName(license)}
+
+${getLicenseText(license)}
+
+## Contributing
+${contribute}
+
+## Tests
+${test}
+
+## Questions
+If you have any questions, you can reach out to me here at https://github.com/${githubId} or via email at ${email}  
 `;
 
 return mdString;
