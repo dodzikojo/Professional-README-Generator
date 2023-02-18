@@ -1,13 +1,14 @@
 const fs = require("fs");
-const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-let year = 2023
+
+let year = new Date().getFullYear()
 let name = "Dodzi Agbenorku"
 
 const license = require("./licenses")
 let allLicenses = license.getLicenses(year, name)
+generateMarkdown.setName_Year(year, name)
 
 
 
@@ -84,9 +85,11 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        writeToFile("fileName.md", generateMarkdown(answers))
+        writeToFile("fileName.md", generateMarkdown.generateMarkdown(answers))
     });
 }
+
+
 
 // function call to initialize program
 init();

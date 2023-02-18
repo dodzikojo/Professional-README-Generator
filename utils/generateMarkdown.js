@@ -1,19 +1,25 @@
-let year = 2023
-let name = "Dodzi Agbenorku"
+let year = null
+let name = null
+
 
 const license = require(".././licenses")
 let allLicenses = license.getLicenses(year, name)
 
 // function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(data, previewPathMd) {
 
-  const {title,description, installation, usage,license, contribute, test, email, githubId} = data;
+  const { title, description,  installation, usage, license, contribute, test, email, githubId } = data;
 
-  let mdString =  
-  `
+
+
+  let mdString =
+    `
 # ${title}
 
 ${getLicenseBadge(license)}
+
+${previewPathMd}
+
 
 ## Description
 ${description}
@@ -49,34 +55,40 @@ ${test}
 If you have any questions, you can reach out to me here at https://github.com/${githubId} or via email at ${email}  
 `;
 
-return mdString;
+  return mdString;
+}
+
+function setName_Year(currentYear, userName) {
+  year = currentYear;
+  name = userName;
 }
 
 //Get selected license badge
 function getLicenseName(selectedLicense) {
   for (const license of allLicenses) {
-      if (license[0].toLowerCase() == selectedLicense.toLowerCase()) {
-          return license[0]
-      }
+    if (license[0].toLowerCase() == selectedLicense.toLowerCase()) {
+      return license[0]
+    }
   }
 }
 
 //Get selected license badge
 function getLicenseBadge(selectedLicense) {
   for (const license of allLicenses) {
-      if (license[0].toLowerCase() == selectedLicense.toLowerCase()) {
-          return license[1]
-      }
+    if (license[0].toLowerCase() == selectedLicense.toLowerCase()) {
+      return license[1]
+    }
   }
 }
 
 //Get selected license text
 function getLicenseText(selectedLicense) {
   for (const license of allLicenses) {
-      if (license[0].toLowerCase() == selectedLicense.toLowerCase()) {
-          return license[2]
-      }
+    if (license[0].toLowerCase() == selectedLicense.toLowerCase()) {
+      return license[2]
+    }
   }
 }
 
-module.exports = generateMarkdown;
+
+module.exports = { generateMarkdown, setName_Year }
