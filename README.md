@@ -2,7 +2,7 @@
 <!-- omit in toc -->
 # Professional README Generator
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 This command line based Node.js app can be used to generate a professional README for an author. It gathers information such as the app's purpose, how to use the app, how to install it, how to report issues, and how to make contributions and generates a new README file.
