@@ -41,4 +41,4 @@ If you would like to contribute, feel free to create a Pull Request, or give us 
 No test added to project.
 
 ## Questions
-If you have any questions, you can reach out to me here at https://github.com/dodzikojo or via email at If you have any questions, you can reach out to me here at https://github.com/dodzikojo or via email at dodzi@windowslive.com.  
+If you have any questions, you can reach out to me here at https://github.com/dodzikojo or via email at abc@windowslive.com
