@@ -6,20 +6,15 @@ const license = require(".././licenses")
 let allLicenses = license.getLicenses(year, name)
 
 // function to generate markdown for README
-function generateMarkdown(data, previewPathMd) {
+function generateMarkdown(data) {
 
   const { title, description,  installation, usage, license, contribute, test, email, githubId } = data;
-
-
 
   let mdString =
     `
 # ${title}
 
 ${getLicenseBadge(license)}
-
-${previewPathMd}
-
 
 ## Description
 ${description}
