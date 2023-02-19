@@ -13,6 +13,7 @@ This command line based Node.js app can be used to generate a professional READM
 - [Previews](#previews)
   - [Video](#video)
   - [Image](#image)
+  - [Sample Output](#sample-output)
 - [Installation Instructions](#installation-instructions)
 - [Usage](#usage)
 - [License](#license)
@@ -22,10 +23,15 @@ This command line based Node.js app can be used to generate a professional READM
 
 ## Previews
 ### Video
-[Readme Generator Video Preview](preview/preview.mkv)
+[Readme Generator Video Preview - GitHub](preview/preview.mkv)
+
+[Readme Generator Video Preview - Google Drive](https://drive.google.com/file/d/1GRHz9CBT60ezpGEV7fXwoTTxUnbaSK6V/view?usp=sharing)
 
 ### Image
 ![Readme Generator Screenshot](preview/readme-generator-preview.png)
+
+### Sample Output
+[Generated README file](Professional%20README%20Generator-README.md)
 
 ## Installation Instructions
 Node.js is required to run. Clone the repo at https://github.com/dodzikojo/Professional-README-Generator.git
