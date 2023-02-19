@@ -31,7 +31,7 @@ This command line based Node.js app can be used to generate a professional READM
 ![Readme Generator Screenshot](preview/readme-generator-preview.png)
 
 ### Sample Output
-[Generated README file](Professional%20README%20Generator-README.md)
+[Generated README file](https://github.com/dodzikojo/Professional-README-Generator/blob/main/Professional%20README%20Generator-README.md)
 
 ## Installation Instructions
 Node.js is required to run. Clone the repo at https://github.com/dodzikojo/Professional-README-Generator.git
