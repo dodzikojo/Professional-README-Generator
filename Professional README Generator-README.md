@@ -7,14 +7,14 @@ This command line based Node.js app can be used to generate a professional READM
 
 ## Table of Contents
 - [Professional README Generator](#professional-readme-generator)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
-  - [Installation Instructions](#installation-instructions)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
+- [Installation Instructions](#installation-instructions)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation Instructions
 Node.js is required to run. Clone the repo at https://github.com/dodzikojo/Professional-README-Generator.git
