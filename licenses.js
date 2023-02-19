@@ -1,4 +1,4 @@
-function getLicenses(year, name){
+function getLicenses(){
     let licenses = [
         [
             "Apache 2.0 License",
@@ -78,7 +78,7 @@ END OF TERMS AND CONDITIONS`
             "BSD 3-Clause License",
             "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
             `
-Copyright ${year} ${name}
+Copyright
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -95,7 +95,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
             "BSD 2-Clause License",
             "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)",
             `
-Copyright ${year} ${name}
+Copyright
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -203,7 +203,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
             "The MIT License",
             "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
             `
-Copyright ${year} ${name}
+Copyright
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -542,7 +542,7 @@ c. Permanently if reasonably notified by the Licensor of the violation, this is 
             "The zlib/libpng License",
             "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)",
             `
-Copyright ${year} ${name}
+Copyright
 
 This software is provided ‘as-is’, without any express or implied
 warranty. In no event will the authors be held liable for any damages

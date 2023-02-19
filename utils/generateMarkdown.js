@@ -1,18 +1,15 @@
-let year = null
-let name = null
 
 
 const license = require(".././licenses")
-let allLicenses = license.getLicenses(year, name)
+let allLicenses = license.getLicenses()
 
 // function to generate markdown for README
 function generateMarkdown(data) {
 
   const { title, description,  installation, usage, license, contribute, test, email, githubId } = data;
-
+  
   let mdString =
-    `
-# ${title}
+`# ${title}
 
 ${getLicenseBadge(license)}
 
@@ -53,10 +50,7 @@ If you have any questions, you can reach out to me here at https://github.com/${
   return mdString;
 }
 
-function setName_Year(currentYear, userName) {
-  year = currentYear;
-  name = userName;
-}
+
 
 //Get selected license badge
 function getLicenseName(selectedLicense) {
@@ -86,4 +80,4 @@ function getLicenseText(selectedLicense) {
 }
 
 
-module.exports = { generateMarkdown, setName_Year }
+module.exports = { generateMarkdown }

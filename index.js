@@ -3,13 +3,8 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-let year = new Date().getFullYear()
-let name = "Dodzi Agbenorku"
-
 const license = require("./licenses")
-let allLicenses = license.getLicenses(year, name)
-generateMarkdown.setName_Year(year, name)
-
+let allLicenses = license.getLicenses()
 
 
 //Get all license names:
